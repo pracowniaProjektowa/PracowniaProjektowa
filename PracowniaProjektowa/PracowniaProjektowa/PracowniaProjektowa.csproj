@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B67A73DE-2532-4D06-89FB-067B0E900F6B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PracowniaProjektowa</RootNamespace>
+    <AssemblyName>PracowniaProjektowa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FileHelpersPPC, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FileHelpersPPC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="data\l12033 [Namyslowska 13].csv" />
+    <None Include="data\l12059 [Szanajcy 20].csv" />
+    <None Include="data\l12152 [Torunska 60].csv" />
+    <None Include="data\l12153 [Torunska 58].csv" />
+    <None Include="data\l12185 [Kondratowicza 13 w.1].csv" />
+    <None Include="data\l12229 [Kondratowicza 13 w.2].csv" />
+    <None Include="data\l12394 [Askenazego 7].csv" />
+    <None Include="data\l12649 [Myszkowska 4].csv" />
+    <None Include="data\l12653 [Junkiewicz 4].csv" />
+    <None Include="data\l12654 [Junkiewicz 6].csv" />
+    <None Include="data\l12971 [Askenazego 4].csv" />
+    <None Include="data\l13144 [Grochowska 172].csv" />
+    <None Include="data\l1321 [Kochanowskiego 46A].csv" />
+    <None Include="data\l13253 [Iganska 2].csv" />
+    <None Include="data\l13256 [Iganska 12].csv" />
+    <None Include="data\l13708 [Walecznych 70].csv" />
+    <None Include="data\l14271 [Komorska 4 w.1].csv" />
+    <None Include="data\l14374 [Kordeckiego 79].csv" />
+    <None Include="data\l15556 [Podstaroscich 11].csv" />
+    <None Include="data\l15570 [Lechonia 5].csv" />
+    <None Include="data\l18263 [Lazurowa 6 w.B].csv" />
+    <None Include="data\l19254 [Komorska 4 w.2].csv" />
+    <None Include="data\l19411 [Swietochowskiego 3 w.2].csv" />
+    <None Include="data\l19456 [Anieli Krzywon 2 w.1].csv" />
+    <None Include="data\l19544 [Conrada 4 w.3].csv" />
+    <None Include="data\l19547 [Conrada 4 w.2].csv" />
+    <None Include="data\l20376 [Kobielska 1].csv" />
+    <None Include="data\l22214 [Strumykowa 29C Os bud 1].csv" />
+    <None Include="data\l22216 [Strumykowa 29E Os bud 1].csv" />
+    <None Include="data\l22217 [Strumykowa 29D Os bud 1].csv" />
+    <None Include="data\l23572 [Sokratesa 6].csv" />
+    <None Include="data\l24009 [Powstancow Slaskich 106B].csv" />
+    <None Include="data\l2465 [Szałka 6].csv" />
+    <None Include="data\l24784 [Powstancow Slaskich 108C bud.E].csv" />
+    <None Include="data\l2549 [Wielunska 6].csv" />
+    <None Include="data\l2550 [Wielunska 8].csv" />
+    <None Include="data\l2551 [Wielunska 10].csv" />
+    <None Include="data\l25705 [Wawozowa 8 w.II L-4241].csv" />
+    <None Include="data\l2572 [Esperanto 18A].csv" />
+    <None Include="data\l2632 [Krepowieckiego 9B].csv" />
+    <None Include="data\l2633 [Jana Olbrachta 62].csv" />
+    <None Include="data\l26486 [Wawozowa 6 w.1  L-4194].csv" />
+    <None Include="data\l26599 [Al Stanow Zjednoczonych 46 podlicznik].csv" />
+    <None Include="data\l26625 [Miedzyborska 43A podlicznik].csv" />
+    <None Include="data\l26638 [Ostrobramska 134 %28CO%29].csv" />
+    <None Include="data\l26702 [Boguslawskiego 6 w.2 %28CO%29].csv" />
+    <None Include="data\l2677 [Czumy 4 %282%29].csv" />
+    <None Include="data\l2678 [Czumy 4A %281%29].csv" />
+    <None Include="data\l26812 [Szalka 6 %28CO%29].csv" />
+    <None Include="data\l26821 [Kwitnaca 9A bl.401 %28CO%29].csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileHelpersPPC.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
